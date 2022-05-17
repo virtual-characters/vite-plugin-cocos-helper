@@ -1,0 +1,40 @@
+{
+    "name": "demo",
+    "private": true,
+    "version": "0.0.0",
+    "package_version": 2,
+    "scripts": {
+        "dev": "tsc && vite build -w",
+        "build": "tsc && vite build"
+    },
+    "main": "src/main.ts",
+    "module": "src/main.ts",
+    "panels": {
+        "default": {
+            "title": "插件自定义面板",
+            "type": "dockable",
+            "main": "src/panel/index.ts",
+            "icon": "static/icon.png"
+        }
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:menu.panel/demo",
+                "label": "i18n:demo.open_panel",
+                "message": "open-panel"
+            }
+        ],
+        "messages": {
+            "open-panel": {
+                "methods": [
+                    "openPanel"
+                ]
+            }
+        }
+    },
+    "devDependencies": {
+        "typescript": "^4.5.4",
+        "vite": "^2.9.9"
+    }
+}

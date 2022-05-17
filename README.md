@@ -81,29 +81,27 @@ export default defineConfig({
 
 ```
 .
-├── app
-│   ├── env.d.ts
-│   ├── main.ts
-│   └── panel
-│       ├── App.vue
-│       └── index.ts
 ├── dist
 │   ├── assets
-│   │   └── panel.e388cfa6.css
+│   │   ├── main.7377688f.js
+│   │   └── panel.27bb6927.js
 │   ├── i18n
 │   │   ├── en.js
-│   │   ├── jp.js
 │   │   └── zh.js
-│   ├── main.js
 │   ├── package.json
-│   ├── panel.js
 │   └── static
 │       └── icon.png
 ├── i18n
 │   ├── en.js
-│   ├── jp.json
-│   └── zh.js
+│   └── zh.json
 ├── package.json
+├── src
+│   ├── index.d.ts
+│   ├── main.ts
+│   ├── panel
+│   │   ├── index.ts
+│   │   └── style.css
+│   └── vite-env.d.ts
 ├── static
 │   └── icon.png
 ├── tsconfig.json
